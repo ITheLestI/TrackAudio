@@ -9,6 +9,7 @@ jobs:
     environment: Release
 
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-2022]
         arch: [x64, arm64]
